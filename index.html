@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hugo boss</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("J01QMSmqj93QY8gmJ");
+      })();
+    </script> -->
+
+<!-- /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/ -->
+
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function(){
+                emailjs.init("AQeqhTl12qygVi-vW");
+            })();
+</script> -->
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("AQeqhTl12qygVi-vW");
+   })();
+</script>
+
+
+  </head>
+  <body>
+    <div class="container border mt-3 bg-light" style="    display: contents;    ">
+      <div class="row">
+        <div class="col-md-6 p-5 bg-primary text-white" 
+        style="background: url(khaby\ lame.jpg); 
+               background-repeat: no-repeat; 
+               background-size: cover;">
+          <h1 style="font-weight: 700; text-align: end;">BOSS</h1>
+          <h4 style="text-align: end;">
+            Please answer all the following questions
+          </h4>
+        </div>
+        <div class="col-md-6 border-left py-3" style="padding-left: 31px;">
+          <h1>Quiz</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-control" id="name" placeholder="Enter name"/>
+          </div>
+
+
+          <div class="form-group">
+            <h5 for="name">Branch</h5>
+            <input type="text" id="Branch" name="Branch" class="form-control" placeholder="Branch" >
+          </div>
+          <!-- <div class="form-group">
+            <h5 for="name">Branch</h5>
+            <input list="Branchs"
+                    name="Branch" 
+                    class="form-control" 
+                    id="Branch"
+                    placeholder="Branch" 
+                    style="border: 1px solid #ced4da; border-radius: 0.25remrem; width: 100%;">
+            <datalist id="Branchs">
+              <option value="Dbayeh">
+              <option value="Down Town">
+              <option value="Ashrafieh">
+              <option value="verdun">
+            </datalist>
+          </div> -->
+         
+
+
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-control" id="email" placeholder="Enter email"/>
+          </div>
+          <div class="form-group">
+            <h5 for="message">
+              <ol>
+                <li>what is the capital of france ?</li>
+                <li>how is the king of jordan ?</li>
+                <li>how is the manager of BOSS dbayeh branch ?</li>
+                <li>How long does it take Ali in break ?</li>
+              </ol>
+             
+            </h5>
+            <textarea class="form-control" id="message" rows="3" placeholder="1.Answer Q1   2.Answer Q2   3.Answer Q3   4.Answer Q4 "></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
