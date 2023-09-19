@@ -3,7 +3,7 @@ function sendMail() {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       Branch: document.getElementById("Branch").value,
-      message: document.getElementById("message").value,
+      //message: document.getElementById("message").value,
 
     };
   
@@ -17,7 +17,7 @@ function sendMail() {
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("Branch").value = "";
-          document.getElementById("message").value = "";
+          //document.getElementById("message").value = "";
           console.log(res);
           alert("Your message sent successfully!!")
   
