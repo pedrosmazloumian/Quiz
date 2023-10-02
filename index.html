@@ -49,59 +49,176 @@
   <body>
     <div class="container border mt-3 bg-light" style="    display: contents;    ">
       <div class="row">
-        <div class="col-md-6 p-5 bg-primary text-white" 
-        style="background: url(khaby\ lame.jpg); 
+        <!-- <div class="col-md-6 p-5 bg-primary text-white" 
+         style="background: url(khaby\ lame.jpg); 
                background-repeat: no-repeat; 
-               background-size: cover;">
-          <h1 style="font-weight: 700; text-align: end;">BOSS</h1>
-          <h4 style="text-align: end;">
+               background-size: cover;"> -->
+        <div class="col-md-6 p-5 bg-primary text-white" >
+          <h1 style="font-weight: 700; text-align: center;">BOSS</h1>
+          <h4 style="text-align: center;">
             Please answer all the following questions
           </h4>
         </div>
         <div class="col-md-6 border-left py-3" style="padding-left: 31px;">
           <h1>Quiz</h1>
-          <div class="form-group">
-            <h5 for="name">What is BOSS ONE suit ?</h5>
-            <input type="text" class="form-control" id="name" placeholder="Answer"/>
-          </div>
 
 
           <div class="form-group">
-            <h5 for="name">Provide us with the BOSS lines by order ?</h5>
-            <input type="text" id="Branch" name="Branch" class="form-control" placeholder="Answer" >
+            <h5 for="name">Q1- What is BOSS ONE suit ?</h5>
+            <form oninput="x.value=parseInt(name.value)">
+                <input type="range" id="name" name="name" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
           </div>
-          <!-- <div class="form-group">
-            <h5 for="name">Branch</h5>
-            <input list="Branchs"
-                    name="Branch" 
-                    class="form-control" 
-                    id="Branch"
-                    placeholder="Branch" 
-                    style="border: 1px solid #ced4da; border-radius: 0.25remrem; width: 100%;">
-            <datalist id="Branchs">
-              <option value="Dbayeh">
-              <option value="Down Town">
-              <option value="Ashrafieh">
-              <option value="verdun">
-            </datalist>
-          </div> -->
+
+
+<hr style="border: 1px solid grey;">
+
+
+          <div class="form-group">
+            <h5 for="name">Q2- Provide us with the BOSS lines by order ?</h5>
+            <form oninput="x.value=parseInt(Branch.value)">
+              <input type="range" id="Branch" name="Branch" class="form-control" min="0" max="100">
+              your answer is %
+              <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+<hr style="border: 1px solid grey;">
+
          
 
 
           <div class="form-group">
-            <h5 for="email">What is our yearly target ( All Stores ) ?</h5>
-            <input type="email" class="form-control" id="email" placeholder="Answer"/>
+            <h5 for="email">Q3- What is our yearly target ( All Stores ) ?</h5>
+            <form oninput="x.value=parseInt(email.value)">
+              <input type="range" id="email" name="email" class="form-control" min="0" max="100">
+              your answer is %
+              <output name="x" for="a"></output>
+            </form>
           </div>
-          <!-- <div class="form-group">
-            <h5 for="message">
-              <ol>
-                <li>What is BOSS ONE suit ?</li>
-                <li>Provide us with the BOSS lines by order ?</li>
-                <li>What is our yearly target ( All Stores ) ?</li>
-              </ol>
-            </h5>
-            <textarea class="form-control" id="message" rows="3" placeholder="1.Answer Q1   2.Answer Q2   3.Answer Q3  "></textarea>
-          </div> -->
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q4- how old are you ?</h5>
+            <form oninput="x.value=parseInt(name_1.value)">
+                <input type="range" id="name_1" name="name_1" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q5- how much do you love your branch ?</h5>
+            <form oninput="x.value=parseInt(Branch_1.value)">
+                <input type="range" id="Branch_1" name="Branch_1" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q6- rate our delay in saleries ?</h5>
+            <form oninput="x.value=parseInt(email_1.value)">
+                <input type="range" id="email_1" name="email_1" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q7- how much do you agree with our return policy ?</h5>
+            <form oninput="x.value=parseInt(name_2.value)">
+                <input type="range" id="name_2" name="name_2" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+         
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q8- how do you rate our off days ?</h5>
+            <form oninput="x.value=parseInt(Branch_2.value)">
+                <input type="range" id="Branch_2" name="Branch_2" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q9- how do you rate our exchange policy ?</h5>
+            <form oninput="x.value=parseInt(email_2.value)">
+                <input type="range" id="email_2" name="email_2" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q10- how do you rate our payment methods ?</h5>
+            <form oninput="x.value=parseInt(name_3.value)">
+                <input type="range" id="name_3" name="name_3" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q11- how do you rate our insurance offers ?</h5>
+            <form oninput="x.value=parseInt(Branch_3.value)">
+                <input type="range" id="Branch_3" name="Branch_3" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+
+
+<hr style="border: 1px solid grey;">
+
+          <div class="form-group">
+            <h5 for="name">Q12- how do you rate our buying process ?</h5>
+            <form oninput="x.value=parseInt(email_3.value)">
+                <input type="range" id="email_3" name="email_3" class="form-control" min="0" max="100"> 
+                your answer is %
+                <output name="x" for="a"></output>
+            </form>
+          </div>
+
+
+
+
           <button class="btn btn-primary" onclick="sendMail()">Submit</button>
         </div>
       </div>
