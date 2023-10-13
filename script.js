@@ -1,5 +1,6 @@
 function sendMail() {
     var params = {
+      ID_NAME: document.getElementById("ID_NAME").value,
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       Branch: document.getElementById("Branch").value,
@@ -12,6 +13,24 @@ function sendMail() {
       name_3: document.getElementById("name_3").value,
       Branch_3: document.getElementById("Branch_3").value,
       email_3: document.getElementById("email_3").value,
+      name_4: document.getElementById("name_4").value,
+      Branch_4: document.getElementById("Branch_4").value,
+      email_4: document.getElementById("email_4").value,
+      name_5: document.getElementById("name_5").value,
+      Branch_5: document.getElementById("Branch_5").value,
+      email_5: document.getElementById("email_5").value,
+      name_6: document.getElementById("name_6").value,
+      Branch_6: document.getElementById("Branch_6").value,
+      email_6: document.getElementById("email_6").value,
+      name_7: document.getElementById("name_7").value,
+      Branch_7: document.getElementById("Branch_7").value,
+      email_7: document.getElementById("email_7").value,
+      name_8: document.getElementById("name_8").value,
+      Branch_8: document.getElementById("Branch_8").value,
+      email_8: document.getElementById("email_8").value,
+      name_9: document.getElementById("name_9").value,
+      Branch_9: document.getElementById("Branch_9").value,
+      email_9: document.getElementById("email_9").value,
       // message: document.getElementById("message").value,
 
     };
@@ -23,6 +42,7 @@ function sendMail() {
   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
+          document.getElementById("ID_NAME").value = "";
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("Branch").value = "";
@@ -35,6 +55,24 @@ function sendMail() {
           document.getElementById("name_3").value= "";
           document.getElementById("Branch_3").value= "";
           document.getElementById("email_3").value= "";
+          document.getElementById("name_4").value= "";
+          document.getElementById("Branch_4").value= "";
+          document.getElementById("email_4").value= "";
+          document.getElementById("name_5").value= "";
+          document.getElementById("Branch_5").value= "";
+          document.getElementById("email_5").value= "";
+          document.getElementById("name_6").value= "";
+          document.getElementById("Branch_6").value= "";
+          document.getElementById("email_6").value= "";
+          document.getElementById("name_7").value= "";
+          document.getElementById("Branch_7").value= "";
+          document.getElementById("email_7").value= "";
+          document.getElementById("name_8").value= "";
+          document.getElementById("Branch_8").value= "";
+          document.getElementById("email_8").value= "";
+          document.getElementById("name_9").value= "";
+          document.getElementById("Branch_9").value= "";
+          document.getElementById("email_9").value= "";
           // document.getElementById("message").value = "";
           console.log(res);
           alert("Your message sent successfully!!")
