@@ -55,30 +55,33 @@
                background-size: cover;"> -->
         <div class="col-md-6 p-5 bg-primary text-white" >
           <h1 style="font-weight: 700; text-align: center;">BOSS</h1>
-          <h4 style="text-align: center;">
-            Please answer all the following questions
-          </h4>
+          <br>
+          <div class="form-group">
+            <h5 for="name" style="text-align: center;">Please enter your full name :</h5>
+            <form oninput="x.value=parseInt(ID_NAME.value)">
+                <input type="text" id="ID_NAME" name="ID_NAME" class="form-control"> 
+            </form>
+          </div>
+          
+          
+          <hr style="border: 1px solid rgb(255, 255, 255);">
+          <br>
+          <h5 style="text-align: center;">
+            Powered by Pedros.M <strong>&copy</strong> 2023
+          </h5>
         </div>
         <div class="col-md-6 border-left py-3" style="padding-left: 31px;">
-          <h1>Quiz</h1>
+          <h1>Survey</h1>
 
 <!-- ////////////////////////////////////////////       start the questions     ////////////////////////////////////////////////////// -->
 
-<div class="form-group">
-  <h5 for="name">Please enter your full name :</h5>
-  <form oninput="x.value=parseInt(ID_NAME.value)">
-      <input type="text" id="ID_NAME" name="ID_NAME" class="form-control"> 
-  </form>
-</div>
 
-
-<hr style="border: 1px solid grey;">
 
 
 
 
           <div class="form-group">
-            <h5 for="name">Q1- How satsfied are you with the current company management?</h5>
+            <h5 for="name">1- How satsfied are you with the current company management?</h5>
             <h5>كم تكون راضیاً عن إدارة الشركة الحالیة؟</h5>
             <form oninput="x.value=parseInt(name.value)">
                 <input type="range" id="name" name="name" class="form-control" min="0" max="100"> 
@@ -92,7 +95,7 @@
 
 
           <div class="form-group">
-            <h5 for="name">Q2- Do you feel the promotion and demotion processes are fair and transparent?</h5>
+            <h5 for="name">2- Do you feel the promotion and demotion processes are fair and transparent?</h5>
             <h5>ھل تعتقد أن عملیات الترقیة والتخفیض عادلة وشفافة؟</h5>
             <form oninput="x.value=parseInt(Branch.value)">
               <input type="range" id="Branch" name="Branch" class="form-control" min="0" max="100">
@@ -108,7 +111,7 @@
 
 
           <div class="form-group">
-            <h5 for="email">Q3- Are the Key Performance Indicators (KPIs) effectively communicated to you?</h5>
+            <h5 for="email">3- Are the Key Performance Indicators (KPIs) effectively communicated to you?</h5>
             <h5> ھل یتم نقل مؤشرات الأداء الرئیسیة بشكل فعاّل إلیك</h5>
             <form oninput="x.value=parseInt(email.value)">
               <input type="range" id="email" name="email" class="form-control" min="0" max="100">
@@ -121,7 +124,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q4- How well do you understand the company's objectives and goals?</h5>
+            <h5 for="name">4- How well do you understand the company's objectives and goals?</h5>
             <h5>كیف تفھم أھداف الشركة بشكل جید؟</h5>
             <form oninput="x.value=parseInt(name_1.value)">
                 <input type="range" id="name_1" name="name_1" class="form-control" min="0" max="100"> 
@@ -134,7 +137,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q5-Are you aware of the policies and procedures in place within the company?</h5>
+            <h5 for="name">5-Are you aware of the policies and procedures in place within the company?</h5>
             <h5>ھل تعلم بالسیاسات والإجراءات المعمول بھا داخل الشركة؟</h5>
             <form oninput="x.value=parseInt(Branch_1.value)">
                 <input type="range" id="Branch_1" name="Branch_1" class="form-control" min="0" max="100"> 
@@ -147,7 +150,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q6- How satisfied are you with the communication between the head office and your location?</h5>
+            <h5 for="name">6- How satisfied are you with the communication between the head office and your location?</h5>
             <h5>كم تكون راضیاً عن التواصل بین المقر الرئیسي وموقع عملك؟</h5>
             <form oninput="x.value=parseInt(email_1.value)">
                 <input type="range" id="email_1" name="email_1" class="form-control" min="0" max="100"> 
@@ -161,7 +164,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q7-How familiar are you with our product brands and their features?</h5>
+            <h5 for="name">7-How familiar are you with our product brands and their features?</h5>
             <h5>كم تعرف عن علامات منتجاتنا ومیزاتھا؟</h5>
             <form oninput="x.value=parseInt(name_2.value)">
                 <input type="range" id="name_2" name="name_2" class="form-control" min="0" max="100"> 
@@ -175,7 +178,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q8-Do you believe the company's brand aligns with its values and mission?</h5>
+            <h5 for="name">8-Do you believe the company's brand aligns with its values and mission?</h5>
             <h5>ھل تعتقد أن علامة الشركة تتماشى مع قیمھا ورسالتھا؟</h5>
             <form oninput="x.value=parseInt(Branch_2.value)">
                 <input type="range" id="Branch_2" name="Branch_2" class="form-control" min="0" max="100"> 
@@ -189,7 +192,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q9-Are you comfortable with the current policies and procedures in the workplace?</h5>
+            <h5 for="name">9-Are you comfortable with the current policies and procedures in the workplace?</h5>
             <h5>ھل تشعر بالراحة مع السیاسات والإجراءات الحالیة في مكان العمل؟</h5>
             <form oninput="x.value=parseInt(email_2.value)">
                 <input type="range" id="email_2" name="email_2" class="form-control" min="0" max="100"> 
@@ -205,7 +208,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q10-How would you rate the working relationship between employees and managers?</h5>
+            <h5 for="name">10-How would you rate the working relationship between employees and managers?</h5>
             <h5>كیف تقیم العلاقة بین الموظفین والمدیرین؟</h5>
             <form oninput="x.value=parseInt(name_3.value)">
                 <input type="range" id="name_3" name="name_3" class="form-control" min="0" max="100"> 
@@ -218,7 +221,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q11-Are you aware of poten􀆟al future opportunities for growth within the company?</h5>
+            <h5 for="name">11-Are you aware of poten􀆟al future opportunities for growth within the company?</h5>
             <h5>ھل تعلم بالفرص المحتملة للنمو داخل الشركة في المستقبل؟</h5>
             <form oninput="x.value=parseInt(Branch_3.value)">
                 <input type="range" id="Branch_3" name="Branch_3" class="form-control" min="0" max="100"> 
@@ -233,7 +236,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q12-Do you feel your opinions and suggestions are valued by the management?</h5>
+            <h5 for="name">12-Do you feel your opinions and suggestions are valued by the management?</h5>
             <h5>ھل تشعر أن آرائك واقتراحاتك محل تقدیر من قبل الإدارة؟</h5>
             <form oninput="x.value=parseInt(email_3.value)">
                 <input type="range" id="email_3" name="email_3" class="form-control" min="0" max="100"> 
@@ -246,7 +249,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q13-How well does the company support work-life balance for its employees?</h5>
+            <h5 for="name">13-How well does the company support work-life balance for its employees?</h5>
             <h5>كم تدعم الشركة تحقیق التوازن بین العمل والحیاة الشخصیة لموظفیھا؟</h5>
             <form oninput="x.value=parseInt(name_4.value)">
                 <input type="range" id="name_4" name="name_4" class="form-control" min="0" max="100"> 
@@ -259,7 +262,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q14- Are you satisfied with the training and development opportunities provided?</h5>
+            <h5 for="name">14- Are you satisfied with the training and development opportunities provided?</h5>
             <h5>ھل أنت راضي عن الفرص التدریب والتطویر المقدمة؟</h5>
             <form oninput="x.value=parseInt(Branch_4.value)">
                 <input type="range" id="Branch_4" name="Branch_4" class="form-control" min="0" max="100"> 
@@ -272,7 +275,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q15-How transparent is the communication regarding changes in company policies?</h5>
+            <h5 for="name">15-How transparent is the communication regarding changes in company policies?</h5>
             <h5>كم ھو شفاف التواصل بشأن تغییرات سیاسات الشركة؟</h5>
             <form oninput="x.value=parseInt(email_4.value)">
                 <input type="range" id="email_4" name="email_4" class="form-control" min="0" max="100"> 
@@ -286,7 +289,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q16-Are you aware of the channels available for addressing workplace concerns?</h5>
+            <h5 for="name">16-Are you aware of the channels available for addressing workplace concerns?</h5>
             <h5>ھل تعلم بالقنوات المتاحة لمعالجة مخاوف مكان العمل؟</h5>
             <form oninput="x.value=parseInt(name_5.value)">
                 <input type="range" id="name_5" name="name_5" class="form-control" min="0" max="100"> 
@@ -299,7 +302,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q17-How well do your personal objectives align with the company's objectives?</h5>
+            <h5 for="name">17-How well do your personal objectives align with the company's objectives?</h5>
             <h5>كیف تتناغم أھدافك الشخصیة مع أھداف الشركة؟</h5>
             <form oninput="x.value=parseInt(Branch_5.value)">
                 <input type="range" id="Branch_5" name="Branch_5" class="form-control" min="0" max="100"> 
@@ -313,7 +316,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q18- How effective is the feedback mechanism between you and your manager?</h5>
+            <h5 for="name">18- How effective is the feedback mechanism between you and your manager?</h5>
             <h5>كم ھو فعاّل آلیة التعامل بینك وبین مدیرك؟</h5>
             <form oninput="x.value=parseInt(email_5.value)">
                 <input type="range" id="email_5" name="email_5" class="form-control" min="0" max="100"> 
@@ -328,7 +331,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q19- Are you satisfied with the level of recognition you receive for your contribu􀆟ons?</h5>
+            <h5 for="name">19- Are you satisfied with the level of recognition you receive for your contribu􀆟ons?</h5>
             <h5>ھل أنت راضي عن مستوى التقدیر الذي تتلقاه عن مساھماتك؟</h5>
             <form oninput="x.value=parseInt(name_6.value)">
                 <input type="range" id="name_6" name="name_6" class="form-control" min="0" max="100"> 
@@ -341,7 +344,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q20- Do you feel empowered to make decisions that align with company goals?</h5>
+            <h5 for="name">20- Do you feel empowered to make decisions that align with company goals?</h5>
             <h5>ھل تشعر بالتمكین لاتخاذ قرارات تتوافق مع أھداف الشركة؟</h5>
             <form oninput="x.value=parseInt(Branch_6.value)">
                 <input type="range" id="Branch_6" name="Branch_6" class="form-control" min="0" max="100"> 
@@ -355,7 +358,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q21- How well are poten􀆟al future growth opportunities communicated to employees?</h5>
+            <h5 for="name">21- How well are poten􀆟al future growth opportunities communicated to employees?</h5>
             <h5>كم ھي فعاّلة آلیة تواصل الفرص المحتملة للنمو مع الموظفین؟</h5>
             <form oninput="x.value=parseInt(email_6.value)">
                 <input type="range" id="email_6" name="email_6" class="form-control" min="0" max="100"> 
@@ -369,7 +372,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q22- How well does the company foster a collaborative work environment?</h5>
+            <h5 for="name">22- How well does the company foster a collaborative work environment?</h5>
             <h5>كم تشجع الشركة بیئة عمل تعاونیة؟</h5>
             <form oninput="x.value=parseInt(name_7.value)">
                 <input type="range" id="name_7" name="name_7" class="form-control" min="0" max="100"> 
@@ -382,7 +385,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q23- Are you confident in the company's long-term vision and strategy?</h5>
+            <h5 for="name">23- Are you confident in the company's long-term vision and strategy?</h5>
             <h5>ھل أنت واثق في الرؤیة والاستراتیجیة طویلة الأمد للشركة؟</h5>
             <form oninput="x.value=parseInt(Branch_7.value)">
                 <input type="range" id="Branch_7" name="Branch_7" class="form-control" min="0" max="100"> 
@@ -396,7 +399,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q24- How sa􀆟sfied are you with the performance appraisal process?</h5>
+            <h5 for="name">24- How sa􀆟sfied are you with the performance appraisal process?</h5>
             <h5>كم تكون راضیاً عن عملیة تقییم الأداء؟</h5>
             <form oninput="x.value=parseInt(email_7.value)">
                 <input type="range" id="email_7" name="email_7" class="form-control" min="0" max="100"> 
@@ -411,7 +414,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q25- Are you aware of the resources available for career development?</h5>
+            <h5 for="name">25- Are you aware of the resources available for career development?</h5>
             <h5>ھل تعلم بالموارد المتاحة لتطویر مسار مھني؟</h5>
             <form oninput="x.value=parseInt(name_8.value)">
                 <input type="range" id="name_8" name="name_8" class="form-control" min="0" max="100"> 
@@ -424,7 +427,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q26- How well does the company's brand resonate with clients/customers?</h5>
+            <h5 for="name">26- How well does the company's brand resonate with clients/customers?</h5>
             <h5>كم تترنح علامة الشركة مع عملائھا؟</h5>
             <form oninput="x.value=parseInt(Branch_8.value)">
                 <input type="range" id="Branch_8" name="Branch_8" class="form-control" min="0" max="100"> 
@@ -438,7 +441,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q27- Do you believe the company's products meet customer expectations?</h5>
+            <h5 for="name">27- Do you believe the company's products meet customer expectations?</h5>
             <h5>ھل تعتقد أن منتجات الشركة تلبي توقعات العملاء؟</h5>
             <form oninput="x.value=parseInt(email_8.value)">
                 <input type="range" id="email_8" name="email_8" class="form-control" min="0" max="100"> 
@@ -453,7 +456,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q28- Are you content with the transparency of the company's financial objectives?</h5>
+            <h5 for="name">28- Are you content with the transparency of the company's financial objectives?</h5>
             <h5>ھل أنت راضي بشكل عام عن شفافیة أھداف الشركة المالیة؟</h5>
             <form oninput="x.value=parseInt(name_9.value)">
                 <input type="range" id="name_9" name="name_9" class="form-control" min="0" max="100"> 
@@ -466,7 +469,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q29- How satisfied are you with the communication from upper management?</h5>
+            <h5 for="name">29- How satisfied are you with the communication from upper management?</h5>
             <h5>كم تكون راضیاً عن التواصل من الإدارة العلیا؟</h5>
             <form oninput="x.value=parseInt(Branch_9.value)">
                 <input type="range" id="Branch_9" name="Branch_9" class="form-control" min="0" max="100"> 
@@ -480,7 +483,7 @@
 <hr style="border: 1px solid grey;">
 
           <div class="form-group">
-            <h5 for="name">Q30- Do you believe the company is responsive to changes in the industry?</h5>
+            <h5 for="name">30- Do you believe the company is responsive to changes in the industry?</h5>
             <h5> ھل تعتقد أن الشركة مستجیبة للتغییرات في الصناعة؟</h5>
             <form oninput="x.value=parseInt(email_9.value)">
                 <input type="range" id="email_9" name="email_9" class="form-control" min="0" max="100"> 
@@ -490,6 +493,8 @@
           </div>
 
           <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+
+
         </div>
       </div>
     </div>
