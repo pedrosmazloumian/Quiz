@@ -1,6 +1,7 @@
 function sendMail() {
     var params = {
-      ID_NAME: document.getElementById("ID_NAME").value,
+      ID_BRANCH: document.getElementById("ID_BRANCH").value,
+      ID_LOCATION: document.getElementById("ID_LOCATION").value,
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       Branch: document.getElementById("Branch").value,
@@ -42,7 +43,8 @@ function sendMail() {
   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
-          document.getElementById("ID_NAME").value = "";
+          document.getElementById("ID_BRANCH").value = "";
+          document.getElementById("ID_LOCATION").value = "";
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("Branch").value = "";
